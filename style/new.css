@@ -1,0 +1,44 @@
+main {
+    text-align: left;
+}
+input {
+    display: block;
+    max-width: 100%;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.selectAction {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button, input {
+    background-color: rgb(19, 19, 19);
+    color: white
+}
+
+
+select {
+    max-width: 200px;
+    height: 90%;
+    background-color: rgb(19, 19, 19);
+    color: white;
+
+}
+
+.modifyBox {
+    display: none;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.show-products {
+    display:flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}

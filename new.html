@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back-office Page</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/new.css" />
+    <script src="scripts/new.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/index.html">Retrowares</a></h1>
+    </header>
+    <h2>Back Office</h2>
+    <main class="container">
+      <div class="selectAction my-3">
+        <button id="newResource" class="me-3 p-3">Add a new product</button>
+        <button id="modifyResource" class="p-3">
+          Modify an existing product
+        </button>
+      </div>
+      <form id="add-form" style="display: none">
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-field">
+          <label for="description">Description:</label>
+          <input type="text" id="description" required />
+        </div>
+        <div class="form-field">
+          <label for="brand">Brand:</label>
+          <input type="text" id="brand" required />
+        </div>
+        <div class="form-field">
+          <label for="price">Price:</label>
+          <input type="number" id="price" required />
+        </div>
+        <div class="form-field">
+          <label for="imageUrl">imageUrl:</label>
+          <input type="text" id="imageUrl" required />
+        </div>
+        <button type="reset" class="my-3 me-3 px-2">Reset</button>
+        <button type="submit" class="px-2">Add</button>
+      </form>
+      <div class="modifyBox">
+        <div>
+          <label for="modify" class="d-block">Select a product:</label>
+          <select name="modify" id="modify" multiple="multiple"></select>
+        </div>
+        <div class="show-products">
+          <div class="show-cover">
+            <img class="cover" src="" alt="" />
+          </div>
+          <form id="edit-form">
+            <div class="form-field">
+              <label for="modify-name">Name:</label>
+              <input type="text" id="modify-name" required />
+            </div>
+            <div class="form-field">
+              <label for="modify-description">Description:</label>
+              <input type="text" id="modify-description" required />
+            </div>
+            <div class="form-field">
+              <label for="modify-brand">Brand:</label>
+              <input type="text" id="modify-brand" required />
+            </div>
+            <div class="form-field">
+              <label for="modify-price">Price:</label>
+              <input type="number" id="modify-price" required />
+            </div>
+            <div class="form-field">
+              <label for="modify-imageUrl">imageUrl:</label>
+              <input type="text" id="modify-imageUrl" required />
+            </div>
+            <button type="submit" class="mt-3 px-2">Edit</button>
+            <button type="button">Delete</button>
+          </form>
+        </div>
+      </div>
+      <!-- bottone per aggiungere parametri opzionali -->
+      <!-- <hr>
+        <fieldset id="custom">
+          <label for="custom-attributes">Specify a custom attribute</label>
+          <input type="text" id="custom-attributes" />
+
+          <button id="btn-addResource">Add some shit</button>
+          <div id="custom-field-container"></div>
+        </fieldset>
+        <hr /> -->
+    </main>
+  </body>
+</html>
