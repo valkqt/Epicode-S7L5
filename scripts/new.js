@@ -179,6 +179,7 @@ const editForm = document.getElementById("edit-form");
 editForm.addEventListener("submit", function (e) {
   const modifiedResource = formHarvester(editForm);
   if (!urlIsValid(modifiedResource.imageUrl)) {
+    e.preventDefault()
     return;
   }
   const options = selector.querySelectorAll("option");
@@ -200,11 +201,11 @@ editForm.addEventListener("submit", function (e) {
 
 // rimuovi una risorsa
 const removeBtn = document.querySelector("[type=button]");
-removeBtn.addEventListener('click', (event) => {
-  if (!confirm('Are you sure?')) {
-    event.preventDefault()
-  }
-})
+// removeBtn.addEventListener('click', (event) => {
+//   if (!confirm('Are you sure?')) {
+//     event.preventDefault()
+//   }
+// })
 
 removeBtn.addEventListener("click", function () {
   const options = selector.querySelectorAll("option");
