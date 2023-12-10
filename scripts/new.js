@@ -99,11 +99,11 @@ function createResource() {
 
 form.addEventListener('submit', (e) => e.preventDefault())
 form.addEventListener("submit", createResource);
-reset.addEventListener('reset', (event) => {
-  if (!confirm('Are you sure?')) {
-    event.preventDefault()
-  }
-})
+// reset.addEventListener('reset', (event) => {
+//   if (!confirm('Are you sure?')) {
+//     event.preventDefault()
+//   }
+// })
 
 const addBtn = document.getElementById("newResource");
 addBtn.addEventListener("click", function () {
